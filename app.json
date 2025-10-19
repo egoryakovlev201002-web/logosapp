@@ -43,6 +43,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cad4f46b-c4cd-4c7f-8580-71e6e49693b6"
+      }
+    },
+    "owner": "dumbox"
   }
 }

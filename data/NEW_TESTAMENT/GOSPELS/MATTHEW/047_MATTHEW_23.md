@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 23
 ﻿Matthew.
 Chapter 23.
 Then Jesus spoke to the multitudes and to his disciples, 

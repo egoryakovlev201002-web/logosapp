@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 4
 ﻿Matthew.
 Chapter 4.
 Then Jesus was led by the spirit into the desert, to be tempted by the devil. 

@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 2
 ﻿Matthew.
 Chapter 2.
 When Jesus therefore was born in Bethlehem of Juda, in the days of king Herod, behold, there came wise men from the east to Jerusalem. 

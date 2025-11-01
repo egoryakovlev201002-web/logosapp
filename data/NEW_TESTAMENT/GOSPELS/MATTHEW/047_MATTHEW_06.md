@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 6
 ﻿Matthew.
 Chapter 6.
 Take heed that you do not your justice before men, to be seen by them: otherwise you shall not have a reward of your Father who is in heaven. 

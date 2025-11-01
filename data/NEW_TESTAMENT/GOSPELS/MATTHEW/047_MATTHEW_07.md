@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 7
 ﻿Matthew.
 Chapter 7.
 Judge not, that you may not be judged, 

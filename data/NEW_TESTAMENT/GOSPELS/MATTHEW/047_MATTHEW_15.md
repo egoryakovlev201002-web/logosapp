@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 15
 ﻿Matthew.
 Chapter 15.
 Then came to him from Jerusalem scribes and Pharisees, saying: 

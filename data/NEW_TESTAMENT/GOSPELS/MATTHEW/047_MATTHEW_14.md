@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 14
 ﻿Matthew.
 Chapter 14.
 At the time Herod the Tetrarch heard the fame of Jesus. 

@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 17
 ﻿Matthew.
 Chapter 17.
 And after six days Jesus taketh unto him Peter and James, and John his brother, and bringeth them up into a high mountain apart: 

@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 27
 ﻿Matthew.
 Chapter 27.
 And when morning was come, all the chief priests and ancients of the people took counsel against Jesus, that they might put him to death. 

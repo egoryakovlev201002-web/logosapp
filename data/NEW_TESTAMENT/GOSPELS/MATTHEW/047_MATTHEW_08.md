@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 8
 ﻿Matthew.
 Chapter 8.
 And when he was come down from the mountain, great multitudes followed him: 

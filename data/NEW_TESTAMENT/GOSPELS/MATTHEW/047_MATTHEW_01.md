@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 1
 ﻿The Good News According to Matthew.
 Chapter 1.
 The book of the generation of Jesus Christ, the son of David, the son of Abraham: 

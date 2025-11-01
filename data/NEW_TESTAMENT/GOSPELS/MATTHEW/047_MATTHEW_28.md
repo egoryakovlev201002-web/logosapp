@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 28
 ﻿Matthew.
 Chapter 28.
 And in the end of the sabbath, when it began to dawn towards the first day of the week, came Mary Magdalen and the other Mary, to see the sepulchre. 

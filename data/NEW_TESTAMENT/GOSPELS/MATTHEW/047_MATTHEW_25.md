@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 25
 ﻿Matthew.
 Chapter 25.
 Then shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. 

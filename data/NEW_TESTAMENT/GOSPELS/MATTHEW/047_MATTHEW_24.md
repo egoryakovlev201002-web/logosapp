@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 24
 ﻿Matthew.
 Chapter 24.
 And Jesus being come out of the temple, went away. And his disciples came to shew him the buildings of the temple. 

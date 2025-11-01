@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 9
 ﻿Matthew.
 Chapter 9.
 And entering into a boat, he passed over the water and came into his own city. 

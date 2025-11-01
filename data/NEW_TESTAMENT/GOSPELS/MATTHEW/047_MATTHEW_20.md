@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 20
 ﻿Matthew.
 Chapter 20.
 The kingdom of heaven is like to an householder, who went out early in the morning to hire labourers into his vineyard. 

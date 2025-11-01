@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 3
 ﻿Matthew.
 Chapter 3.
 And in those days cometh John the Baptist preaching in the desert of Judea. 

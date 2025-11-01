@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 13
 ﻿Matthew.
 Chapter 13.
 The same day Jesus going out of the house, sat by the sea side. 

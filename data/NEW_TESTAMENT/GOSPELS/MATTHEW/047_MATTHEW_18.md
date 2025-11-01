@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 18
 ﻿Matthew.
 Chapter 18.
 At that hour the disciples came to Jesus, saying: Who thinkest thou is the greater in the kingdom of heaven? 

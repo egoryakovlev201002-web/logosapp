@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 10
 ﻿Matthew.
 Chapter 10.
 And having called his twelve disciples together, he gave them power over unclean spirits, to cast them out, and to heal all manner of diseases, and all manner of infirmities. 

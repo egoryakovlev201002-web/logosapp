@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 5
 ﻿Matthew.
 Chapter 5.
 And seeing the multitudes, he went up into a mountain, and when he was set down, his disciples came unto him. 

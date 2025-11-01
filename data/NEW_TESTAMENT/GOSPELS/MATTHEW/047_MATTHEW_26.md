@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 26
 ﻿Matthew.
 Chapter 26.
 And it came to pass, when Jesus had ended all these words, he said to his disciples: 

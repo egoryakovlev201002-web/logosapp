@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 16
 ﻿Matthew.
 Chapter 16.
 And there came to him the Pharisees and Sadduccees tempting: and they asked him to shew them a sign from heaven. 

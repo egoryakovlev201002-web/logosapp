@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 22
 ﻿Matthew.
 Chapter 22.
 And Jesus answering, spoke again in parables to them, saying: 

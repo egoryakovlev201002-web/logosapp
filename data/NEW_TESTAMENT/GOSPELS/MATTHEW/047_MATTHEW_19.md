@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 19
 ﻿Matthew.
 Chapter 19.
 And it came to pass when Jesus had ended these words, he departed from Galilee, and came into the coasts of Judea, beyond Jordan. 

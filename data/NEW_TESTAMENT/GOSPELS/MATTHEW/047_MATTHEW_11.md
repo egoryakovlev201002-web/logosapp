@@ -1,5 +1,3 @@
-Book: Matthew
-Chapter: 11
 ﻿Matthew.
 Chapter 11.
 And it came to pass, when Jesus had made an end of commanding his twelve disciples, he passed from thence, to teach and preach in their cities. 

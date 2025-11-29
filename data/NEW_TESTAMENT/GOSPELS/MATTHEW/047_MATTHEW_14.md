@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 14.
 At the time Herod the Tetrarch heard the fame of Jesus. 
 And he said to his servants: This is John the Baptist: he is risen from the dead, and therefore mighty works shew forth themselves in him. 
 For Herod had apprehended John and bound him, and put him into prison, because of Herodias, his brother’s wife. 

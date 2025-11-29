@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 19.
 And it came to pass when Jesus had ended these words, he departed from Galilee, and came into the coasts of Judea, beyond Jordan. 
 And great multitudes followed him: and he healed them there. 
 And there came to him the Pharisees tempting him, and saying: Is it lawful for a man to put away his wife for every cause? 

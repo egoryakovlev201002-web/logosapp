@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 15.
 Then came to him from Jerusalem scribes and Pharisees, saying: 
 Why do thy disciples transgress the tradition of the ancients? For they wash not their hands when they eat bread. 
 But he answering, said to them: Why do you also transgress the commandment of God for your tradition? For God said: 

@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 21.
 And when they drew nigh to Jerusalem, and were come to Bethphage, unto mount Olivet, then Jesus sent two disciples, 
 Saying to them: Go ye into the village that is over against you, and immediately you shall find an ass tied, and a colt with her: loose them and bring them to me. 
 And if any man shall say anything to you, say ye, that the Lord hath need of them: and forthwith he will let them go. 

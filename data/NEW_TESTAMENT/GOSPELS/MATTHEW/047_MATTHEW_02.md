@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 2.
 When Jesus therefore was born in Bethlehem of Juda, in the days of king Herod, behold, there came wise men from the east to Jerusalem. 
 Saying, Where is he that is born king of the Jews? For we have seen his star in the east, and are come to adore him. 
 And king Herod hearing this, was troubled, and all Jerusalem with him. 

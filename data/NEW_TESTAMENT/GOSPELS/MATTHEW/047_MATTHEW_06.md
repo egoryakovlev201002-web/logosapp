@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 6.
 Take heed that you do not your justice before men, to be seen by them: otherwise you shall not have a reward of your Father who is in heaven. 
 Therefore when thou dost an almsdeed, sound not a trumpet before thee, as the hypocrites do in the synagogues and in the streets, that they may be honoured by men. Amen I say to you, they have received their reward. 
 But when thou dost alms, let not thy left hand know what thy right hand doth. 

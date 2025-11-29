@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 5.
 And seeing the multitudes, he went up into a mountain, and when he was set down, his disciples came unto him. 
 And opening his mouth, he taught them, saying: 
 Blessed are the poor in spirit: for theirs is the kingdom of heaven. 

@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 12.
 At that time Jesus went through the corn on the sabbath: and his disciples being hungry, began to pluck the ears, and to eat. 
 And the Pharisees seeing them, said to him: Behold thy disciples do that which is not lawful to do on the sabbath days. 
 But he said to them: Have you not read what David did when he was hungry, and they that were with him: 

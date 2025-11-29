@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 16.
 And there came to him the Pharisees and Sadduccees tempting: and they asked him to shew them a sign from heaven. 
 But he answered and said to them: When it is evening, you say, It will be fair weather, for the sky is red. 
 And in the morning: Today there will be a storm, for the sky is red and lowering. You know then how to discern the face of the sky: and can you not know the signs of the times? 

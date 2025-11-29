@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 26.
 And it came to pass, when Jesus had ended all these words, he said to his disciples: 
 You know that after two days shall be the pasch, and the son of man shall be delivered up to be crucified: 
 Then were gathered together the chief priests and ancients of the people into the court of the high priest, who was called Caiphas: 

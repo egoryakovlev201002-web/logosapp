@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 13.
 The same day Jesus going out of the house, sat by the sea side. 
 And great multitudes were gathered unto him, so that he went up into a boat and sat: and all the multitude stood on the shore. 
 And he spoke to them many things in parables, saying: Behold the sower went forth to sow. 

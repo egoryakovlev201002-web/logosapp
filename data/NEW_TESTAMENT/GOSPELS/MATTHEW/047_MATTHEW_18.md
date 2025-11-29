@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 18.
 At that hour the disciples came to Jesus, saying: Who thinkest thou is the greater in the kingdom of heaven? 
 And Jesus calling unto him a little child, set him in the midst of them, 
 And said: Amen I say to you, unless you be converted, and become as little children, you shall not enter into the kingdom of heaven. 

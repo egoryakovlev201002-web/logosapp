@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 9.
 And entering into a boat, he passed over the water and came into his own city. 
 And behold they brought to him one sick of the palsy lying in a bed. And Jesus, seeing their faith, said to the man sick of the palsy: Be of good heart, son, thy sins are forgiven thee. 
 And behold some of the scribes said within themselves: He blasphemeth. 

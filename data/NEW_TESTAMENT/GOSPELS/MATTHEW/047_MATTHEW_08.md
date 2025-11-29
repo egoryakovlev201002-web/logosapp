@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 8.
 And when he was come down from the mountain, great multitudes followed him: 
 And behold a leper came and adored him, saying: Lord, if thou wilt, thou canst make me clean. 
 And Jesus stretching forth his hand, touched him, saying: I will, be thou made clean. And forthwith his leprosy was cleansed. 

@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 10.
 And having called his twelve disciples together, he gave them power over unclean spirits, to cast them out, and to heal all manner of diseases, and all manner of infirmities. 
 And the names of the twelve apostles are these: The first, Simon who is called Peter, and Andrew his brother, 
 James the son of Zebedee, and John his brother, Philip and Bartholomew, Thomas and Matthew the publican, and James the son of Alpheus, and Thaddeus, 

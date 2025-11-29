@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 20.
 The kingdom of heaven is like to an householder, who went out early in the morning to hire labourers into his vineyard. 
 And having agreed with the labourers for a penny a day, he sent them into his vineyard. 
 And going about the third hour, he saw others standing in the market place idle. 

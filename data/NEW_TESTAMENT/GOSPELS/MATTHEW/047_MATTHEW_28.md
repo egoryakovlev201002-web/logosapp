@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 28.
 And in the end of the sabbath, when it began to dawn towards the first day of the week, came Mary Magdalen and the other Mary, to see the sepulchre. 
 And behold there was a great earthquake. For an angel of the Lord descended from heaven, and coming, rolled back the stone, and sat upon it. 
 And his countenance was as lightning, and his raiment as snow. 

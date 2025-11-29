@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 23.
 Then Jesus spoke to the multitudes and to his disciples, 
 Saying: The scribes and the Pharisees have sitten on the chair of Moses. 
 All things therefore whatsoever they shall say to you, observe and do: but according to their works do ye not; for they say, and do not. 

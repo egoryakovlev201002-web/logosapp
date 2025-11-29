@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 7.
 Judge not, that you may not be judged, 
 For with what judgment you judge, you shall be judged: and with what measure you mete, it shall be measured to you again. 
 Any why seest thou the mote that is in thy brother’s eye; and seest not the beam that is in thy own eye? 

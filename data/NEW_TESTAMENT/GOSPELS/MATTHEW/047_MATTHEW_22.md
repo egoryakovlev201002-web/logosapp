@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 22.
 And Jesus answering, spoke again in parables to them, saying: 
 The kingdom of heaven is likened to a king, who made a marriage for his son. 
 And he sent his servants, to call them that were invited to the marriage; and they would not come. 

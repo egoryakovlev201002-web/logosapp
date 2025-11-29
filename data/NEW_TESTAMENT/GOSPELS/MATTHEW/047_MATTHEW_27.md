@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 27.
 And when morning was come, all the chief priests and ancients of the people took counsel against Jesus, that they might put him to death. 
 And they brought him bound, and delivered him to Pontius Pilate the governor. 
 Then Judas, who betrayed him, seeing that he was condemned, repenting himself, brought back the thirty pieces of silver to the chief priests and ancients, 

@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 11.
 And it came to pass, when Jesus had made an end of commanding his twelve disciples, he passed from thence, to teach and preach in their cities. 
 Now when John had heard in prison the works of Christ: sending two of his disciples he said to him: 
 Art thou he that art to come, or look we for another? 

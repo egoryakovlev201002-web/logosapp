@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 24.
 And Jesus being come out of the temple, went away. And his disciples came to shew him the buildings of the temple. 
 And he answering, said to them: Do you see all these things? Amen I say to you there shall not be left here a stone upon a stone that shall not be destroyed. 
 And when he was sitting on mount Olivet, the disciples came to him privately, saying: Tell us when shall these things be? and what shall be the sign of thy coming, and of the consummation of the world? 

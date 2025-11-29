@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 25.
 Then shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. 
 And five of them were foolish, and five wise. 
 But the five foolish, having taken their lamps, did not take oil with them: 

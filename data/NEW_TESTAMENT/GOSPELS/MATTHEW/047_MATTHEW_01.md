@@ -1,5 +1,3 @@
-﻿The Good News According to Matthew.
-Chapter 1.
 The book of the generation of Jesus Christ, the son of David, the son of Abraham: 
 Abraham begot Isaac. And Isaac begot Jacob. And Jacob begot Judas and his brethren. 
 And Judas begot Phares and Zara of Thamar. And Phares begot Esron. And Esron begot Aram. 

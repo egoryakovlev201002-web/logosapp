@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 4.
 Then Jesus was led by the spirit into the desert, to be tempted by the devil. 
 And when he had fasted forty days and forty nights, afterwards he was hungry. 
 And the tempter coming said to him: If thou be the Son of God, command that these stones be made bread. 

@@ -1,5 +1,3 @@
-﻿Matthew.
-Chapter 3.
 And in those days cometh John the Baptist preaching in the desert of Judea. 
 And saying: Do penance: for the kingdom of heaven is at hand. 
 For this is he that was spoken of by Isaias the prophet, saying: A voice of one crying in the desert, Prepare ye the way of the Lord, make straight his paths. 

@@ -1,5 +1,9 @@
 import * as React from 'react';
-import { View, Text, StyleSheet, Switch, ImageBackground, Animated } from 'react-native';
+import JOHN from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/JOHN.json';
+import MARK from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/MARK.json';
+import LUKE from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/LUKE.json';
+import MATTHEW from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/MATTHEW.json';
+import { View, Text, StyleSheet, Switch, ImageBackground, Animated, ScrollView } from 'react-native';
 import {
   NavigationContainer,
   useNavigationContainerRef
@@ -9,6 +13,13 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import haydockImage from './data/Images/haydock.jpg';
 
 const ThemeContext = React.createContext();
+
+const BOOKS = {
+  JOHN,
+  MARK,
+  LUKE,
+  MATTHEW
+};
 
 function CustomHeader({ title, colors }) {
   return (
@@ -29,31 +40,88 @@ function CustomHeader({ title, colors }) {
   );
 }
 
-function ReaderScreen() {
+function ReaderScreen({ route }) {
   const { colors } = React.useContext(ThemeContext);
 
+  if (!route || !route.params) {
+    return (
+      <View style={[styles.container, { backgroundColor: colors.background }]}>
+        <Text style={[styles.text, { color: colors.text }]}>
+          Please select a passage.
+        </Text>
+      </View>
+    );
+  }
+
+  const { book, chapter } = route.params;
+  const chapterData = BOOKS[book]?.[chapter];
+
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <Text style={[styles.title, { color: colors.text }]}></Text>
-      <Text style={[styles.text, { color: colors.text }]}>
-        Please select the book in the graph and enjoy reading :)
-      </Text>
-    </View>
-  );
+  <View style={[styles.container, { backgroundColor: colors.background }]}>
+    <Text style={[styles.title, { color: colors.text, marginBottom: 5 }]}>
+      {book} {chapter}
+    </Text>
+
+    <ScrollView
+      style={{ width: '100%' }}
+      contentContainerStyle={{ paddingBottom: 40 }}
+    >
+      {chapterData ? (
+        chapterData.map((line, index) => (
+          <Text
+            key={index}
+            style={{
+              color: colors.text,
+              fontSize: 18,
+              marginBottom: 8,
+              paddingHorizontal: 4,
+            }}
+          >
+            {index + 1}. {line}
+          </Text>
+        ))
+      ) : (
+        <Text style={{ color: colors.text }}>Chapter not found.</Text>
+      )}
+    </ScrollView>
+  </View>
+);
+;
 }
 
-function GraphScreen() {
+
+function GraphScreen({ navigation }) {
   const { colors } = React.useContext(ThemeContext);
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <Text style={[styles.title, { color: colors.text }]}></Text>
       <Text style={[styles.text, { color: colors.text }]}>
         This will display your network graph image later.
       </Text>
+
+      <Text
+        style={{
+          marginTop: 20,
+          fontSize: 20,
+          paddingVertical: 12,
+          paddingHorizontal: 30,
+          backgroundColor: colors.background,
+          color: colors.text,
+          borderRadius: 20,
+        }}
+        onPress={() =>
+          navigation.navigate('Reader', {
+            book: 'MARK',
+            chapter: '16'
+          })
+        }
+      >
+        Test: Open MARK 16
+      </Text>
     </View>
   );
 }
+
 
 function SettingsScreen() {
   const { darkMode, toggleDarkMode, colors } = React.useContext(ThemeContext);

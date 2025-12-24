@@ -1,158 +1,117 @@
-import * as React from 'react';
-import JOHN from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/JOHN.json';
-import MARK from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/MARK.json';
-import LUKE from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/LUKE.json';
-import MATTHEW from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/MATTHEW.json';
-import { View, Text, StyleSheet, Switch, ImageBackground, Animated, ScrollView } from 'react-native';
-import {
-  NavigationContainer,
-  useNavigationContainerRef
-} from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
+import * as React from 'react';
+import { Animated, ImageBackground, ScrollView, StatusBar, Switch, Text, View } from 'react-native';
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import haydockImage from './data/Images/haydock.jpg';
+import JOHN from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/JOHN.json';
+import LUKE from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/LUKE.json';
+import MARK from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/MARK.json';
+import MATTHEW from './data/NEW_TESTAMENT/GOSPELS/JSON_OUTPUT/MATTHEW.json';
+
 
 const ThemeContext = React.createContext();
-
-const BOOKS = {
-  JOHN,
-  MARK,
-  LUKE,
-  MATTHEW
-};
+const BOOKS = { JOHN, MARK, LUKE, MATTHEW };
+const Tab = createBottomTabNavigator();
 
 function CustomHeader({ title, colors }) {
+  const insets = useSafeAreaInsets();
   return (
-    <View
-      style={{
-        backgroundColor: colors.background,
-        paddingVertical: 18,
-        paddingHorizontal: 16,
-        borderBottomWidth: 1,
-        borderBottomColor: colors.text + '55',
-        alignItems: 'center',
-      }}
-    >
-      <Text style={{ fontSize: 22, fontWeight: '600', color: colors.text }}>
-        {title}
-      </Text>
+    <View style={{
+      backgroundColor: colors.background,
+      paddingTop: insets.top + 12,
+      paddingBottom: 12,
+      paddingHorizontal: 16,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.text + '55',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+      <Text style={{ fontSize: 22, fontWeight: '600', color: colors.text }}>{title}</Text>
     </View>
   );
 }
 
 function ReaderScreen({ route }) {
   const { colors } = React.useContext(ThemeContext);
+  const insets = useSafeAreaInsets();
 
-  if (!route || !route.params) {
-    return (
-      <View style={[styles.container, { backgroundColor: colors.background }]}>
-        <Text style={[styles.text, { color: colors.text }]}>
-          Please select a passage.
-        </Text>
-      </View>
-    );
-  }
-
-  const { book, chapter } = route.params;
-  const chapterData = BOOKS[book]?.[chapter];
+  const { book, chapter } = route.params || {};
+  const chapterData = book && chapter ? BOOKS[book]?.[chapter] : null;
 
   return (
-  <View style={[styles.container, { backgroundColor: colors.background }]}>
-    <Text style={[styles.title, { color: colors.text, marginBottom: 5 }]}>
-      {book} {chapter}
-    </Text>
-
-    <ScrollView
-      style={{ width: '100%' }}
-      contentContainerStyle={{ paddingBottom: 40 }}
-    >
-      {chapterData ? (
-        chapterData.map((line, index) => (
-          <Text
-            key={index}
-            style={{
-              color: colors.text,
-              fontSize: 18,
-              marginBottom: 8,
-              paddingHorizontal: 4,
-            }}
-          >
-            {index + 1}. {line}
+    <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScrollView contentContainerStyle={{
+        paddingTop: 12,
+        paddingBottom: insets.bottom + 20,
+        paddingHorizontal: 16,
+        flexGrow: 1
+      }}>
+        {(!chapterData) ? (
+          <Text style={{ color: colors.text, fontSize: 16, textAlign: 'center', marginTop: 40 }}>
+            Please select a passage.
           </Text>
-        ))
-      ) : (
-        <Text style={{ color: colors.text }}>Chapter not found.</Text>
-      )}
-    </ScrollView>
-  </View>
-);
-;
+        ) : (
+          <>
+            <Text style={{ fontSize: 28, fontWeight: '600', color: colors.text, marginBottom: 10 }}>
+              {book} {chapter}
+            </Text>
+            {chapterData.map((line, index) => (
+              <Text key={index} style={{ color: colors.text, fontSize: 18, marginBottom: 8 }}>
+                {index + 1}. {line}
+              </Text>
+            ))}
+          </>
+        )}
+      </ScrollView>
+    </SafeAreaView>
+  );
 }
-
 
 function GraphScreen({ navigation }) {
   const { colors } = React.useContext(ThemeContext);
+  const insets = useSafeAreaInsets();
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <Text style={[styles.text, { color: colors.text }]}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: colors.background, paddingTop: 12, paddingHorizontal: 16, paddingBottom: insets.bottom + 20 }}>
+      <Text style={{ color: colors.text, fontSize: 16, textAlign: 'center', marginTop: 40 }}>
         This will display your network graph image later.
       </Text>
-
       <Text
         style={{
-          marginTop: 20,
+          marginTop: 40,
           fontSize: 20,
           paddingVertical: 12,
           paddingHorizontal: 30,
           backgroundColor: colors.background,
           color: colors.text,
           borderRadius: 20,
+          textAlign: 'center',
+          alignSelf: 'center'
         }}
-        onPress={() =>
-          navigation.navigate('Reader', {
-            book: 'MARK',
-            chapter: '16'
-          })
-        }
+        onPress={() => navigation.navigate('Reader', { book: 'MARK', chapter: '1' })}
       >
         Test: Open MARK 16
       </Text>
-    </View>
+    </SafeAreaView>
   );
 }
 
-
 function SettingsScreen() {
   const { darkMode, toggleDarkMode, colors } = React.useContext(ThemeContext);
+  const insets = useSafeAreaInsets();
 
   return (
-    <View
-      style={[
-        styles.container,
-        {
-          backgroundColor: colors.background,
-          alignItems: 'stretch',
-          justifyContent: 'flex-start', 
-          paddingTop: 20,              
-        },
-      ]}
-    >
-      <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          paddingVertical: 14,
-          paddingHorizontal: 8,
-          borderBottomWidth: 1,
-          borderBottomColor: colors.text + '33',
-        }}
-      >
-        <Text style={{ fontSize: 18, color: colors.text }}>
-          Dark Mode
-        </Text>
-
+    <SafeAreaView style={{ flex: 1, backgroundColor: colors.background, paddingTop: 12, paddingBottom: insets.bottom, paddingHorizontal: 16 }}>
+      <View style={{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingVertical: 14,
+        borderBottomWidth: 1,
+        borderBottomColor: colors.text + '33'
+      }}>
+        <Text style={{ fontSize: 18, color: colors.text }}>Dark Mode</Text>
         <Switch
           value={darkMode}
           onValueChange={toggleDarkMode}
@@ -160,7 +119,7 @@ function SettingsScreen() {
           trackColor={{ false: '#999', true: '#4a90e2' }}
         />
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -168,6 +127,7 @@ function SplashScreen({ onFinish }) {
   const fadeCross = React.useRef(new Animated.Value(0)).current;
   const fadeWelcome = React.useRef(new Animated.Value(0)).current;
   const fadeButton = React.useRef(new Animated.Value(0)).current;
+  const insets = useSafeAreaInsets();
 
   React.useEffect(() => {
     Animated.stagger(400, [
@@ -186,34 +146,73 @@ function SplashScreen({ onFinish }) {
   };
 
   return (
-    <ImageBackground
-      source={haydockImage}
-      style={styles.splashBackground}
-      resizeMode="cover"
-    >
-      <View style={{ flex: 8, justifyContent: 'center', alignItems: 'center' }}>
-        <Animated.View style={{ opacity: fadeCross, alignItems: 'center' }}>
-          <Text style={styles.cross}>✠</Text>
-        </Animated.View>
-
-        <Animated.View style={{ opacity: fadeWelcome, alignItems: 'center' }}>
-          <Text style={styles.welcome}>Welcome to the Logos App!</Text>
-        </Animated.View>
-      </View>
-
-      {/* Bottom menu: Start button */}
-      <View style={{ flex: 2, justifyContent: 'center', alignItems: 'center' }}>
-        <Animated.View style={{ opacity: fadeButton }}>
-          <Text style={styles.startButton} onPress={handleStartPress}>
-            Start ➔
-          </Text>
-        </Animated.View>
-      </View>
-    </ImageBackground>
+    <View style={{ flex: 1 }}>
+      <ImageBackground
+        source={haydockImage}
+        style={{ flex: 1, width: '100%', height: '100%' }}
+        resizeMode="cover"
+      >
+        <View style={{ flex: 1, paddingTop: insets.top, paddingBottom: insets.bottom }}>
+          <View style={{ flex: 8, justifyContent: 'center', alignItems: 'center' }}>
+            <Animated.View style={{ opacity: fadeCross, alignItems: 'center' }}>
+              <Text style={{ fontSize: 100, color: '#fff', marginBottom: 20 }}>✠</Text>
+            </Animated.View>
+            <Animated.View style={{ opacity: fadeWelcome, alignItems: 'center' }}>
+              <Text style={{ fontSize: 25, color: '#fff', textAlign: 'center', marginBottom: 20 }}>
+                Welcome to the Logos App!
+              </Text>
+            </Animated.View>
+          </View>
+          <View style={{ flex: 2, justifyContent: 'center', alignItems: 'center' }}>
+            <Animated.View style={{ opacity: fadeButton }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  color: '#fff',
+                  paddingVertical: 14,
+                  paddingHorizontal: 50,
+                  backgroundColor: '#03032E',
+                  borderRadius: 30,
+                  overflow: 'hidden',
+                  textAlign: 'center',
+                }}
+                onPress={handleStartPress}
+              >
+                Start ➔
+              </Text>
+            </Animated.View>
+          </View>
+        </View>
+      </ImageBackground>
+    </View>
   );
 }
 
-const Tab = createBottomTabNavigator();
+// --- Dynamic Tab Navigator ---
+function AppTabs() {
+  const insets = useSafeAreaInsets();
+  const { darkMode, colors } = React.useContext(ThemeContext);
+
+  return (
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {
+          backgroundColor: colors.background,
+          height: 40 + insets.bottom,
+          paddingBottom: insets.bottom > 0 ? insets.bottom / 2 : 8,
+        },
+        tabBarActiveTintColor: darkMode ? '#9bbcff' : '#004aad',
+        tabBarInactiveTintColor: darkMode ? '#aaa' : '#777',
+        tabBarShowLabel: true,
+      }}
+    >
+      <Tab.Screen name="Reader" component={ReaderScreen} options={{ tabBarIcon: () => <Text style={{ fontSize: 20 }}>📖</Text> }} />
+      <Tab.Screen name="Graph" component={GraphScreen} options={{ tabBarIcon: () => <Text style={{ fontSize: 20 }}>🕸️</Text> }} />
+      <Tab.Screen name="Settings" component={SettingsScreen} options={{ tabBarIcon: () => <Text style={{ fontSize: 20 }}>⚙️</Text> }} />
+    </Tab.Navigator>
+  );
+}
 
 export default function App() {
   const navigationRef = useNavigationContainerRef();
@@ -238,90 +237,22 @@ export default function App() {
     return unsubscribe;
   }, []);
 
-  if (showSplash) {
-    return <SplashScreen onFinish={() => setShowSplash(false)} />;
-  }
-
   return (
-    <ThemeContext.Provider value={theme}>
-      <NavigationContainer ref={navigationRef}>
-        <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
-          <CustomHeader title={currentTitle} colors={theme.colors} />
-
-          <Tab.Navigator
-            screenOptions={{
-              headerShown: false,
-              tabBarStyle: {
-                backgroundColor: theme.colors.background,
-                height: 60,
-              },
-              tabBarActiveTintColor: darkMode ? '#9bbcff' : '#004aad',
-              tabBarInactiveTintColor: darkMode ? '#aaa' : '#777',
-              tabBarShowLabel: true,
-            }}
-          >
-            <Tab.Screen
-              name="Reader"
-              component={ReaderScreen}
-              options={{ tabBarIcon: () => <Text style={{ fontSize: 20 }}>📖</Text> }}
-            />
-            <Tab.Screen
-              name="Graph"
-              component={GraphScreen}
-              options={{ tabBarIcon: () => <Text style={{ fontSize: 20 }}>🕸️</Text> }}
-            />
-            <Tab.Screen
-              name="Settings"
-              component={SettingsScreen}
-              options={{ tabBarIcon: () => <Text style={{ fontSize: 20 }}>⚙️</Text> }}
-            />
-          </Tab.Navigator>
-        </View>
-      </NavigationContainer>
-    </ThemeContext.Provider>
+    <SafeAreaProvider>
+      <StatusBar barStyle={darkMode ? 'light-content' : 'dark-content'} backgroundColor={theme.colors.background} />
+      {showSplash ? (
+        <SplashScreen onFinish={() => setShowSplash(false)} />
+      ) : (
+        <ThemeContext.Provider value={theme}>
+          <NavigationContainer ref={navigationRef}>
+            <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
+              <CustomHeader title={currentTitle} colors={theme.colors} />
+              <AppTabs />
+            </View>
+          </NavigationContainer>
+        </ThemeContext.Provider>
+      )}
+    </SafeAreaProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 24,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: '600',
-    marginBottom: 10,
-  },
-  text: {
-    fontSize: 16,
-    textAlign: 'center',
-  },
-  splashBackground: {
-    flex: 1,
-    width: '100%',
-    height: '100%',
-  },
-  cross: {
-    fontSize: 100,
-    color: '#fff',
-    marginBottom: 20,
-  },
-  welcome: {
-    fontSize: 25,
-    color: '#fff',
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  startButton: {
-    fontSize: 20,
-    color: '#fff',
-    paddingVertical: 14,
-    paddingHorizontal: 50,
-    backgroundColor: '#03032E',
-    borderRadius: 30,
-    overflow: 'hidden',
-    textAlign: 'center',
-  },
-});
